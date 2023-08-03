@@ -1,0 +1,2 @@
+# Kite Furn Website
+This is the new and updated kite furn website code repository. Do not commit code to this branch. Other branches exist for deployment, development and feature development. Use those branches to push all code to.
