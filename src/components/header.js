@@ -184,8 +184,8 @@ class NavMenu extends Component {
           </button>
         </Link>
 
-        <a
-          href="/customInteriors/#residence"
+        <Link
+          to="/customInteriors/#residence"
           className="resp-block"
           id="res-nav-btn-id"
         >
@@ -195,7 +195,7 @@ class NavMenu extends Component {
           >
             Residence Interiors
           </button>
-        </a>
+        </Link>
 
         <a href="http://www.kitekitchens.com/" className="resp-block">
           <button
@@ -340,7 +340,7 @@ class CustomMenu extends Component {
         >
           <div className="menu-drop-internal text-center">
             <div className="menu-drop-buttons-container">
-              <a href="/customInteriors/#hotels">
+              <Link to="/customInteriors/#hotels">
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -349,9 +349,9 @@ class CustomMenu extends Component {
                 >
                   Hotel Interiors
                 </button>
-              </a>
+              </Link>
 
-              <a href="/customInteriors/#eateries">
+              <Link to="/customInteriors/#eateries">
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -360,9 +360,9 @@ class CustomMenu extends Component {
                 >
                   Bakeries
                 </button>
-              </a>
+              </Link>
 
-              <a href="/customInteriors/#retails">
+              <Link to="/customInteriors/#retails">
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -371,9 +371,9 @@ class CustomMenu extends Component {
                 >
                   Departmentals Stores
                 </button>
-              </a>
+              </Link>
 
-              <a href="/customInteriors/#halls">
+              <Link to="/customInteriors/#halls">
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -382,9 +382,9 @@ class CustomMenu extends Component {
                 >
                   Banquet &#38; Meeting Halls
                 </button>
-              </a>
+              </Link>
 
-              <a href="/customInteriors/#offices">
+              <Link to="/customInteriors/#offices">
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -393,7 +393,7 @@ class CustomMenu extends Component {
                 >
                   Offices
                 </button>
-              </a>
+              </Link>
 
               <Link to="/customInteriors">
                 <button
