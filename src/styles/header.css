@@ -1,51 +1,43 @@
 .header-container {
-  height: 77px;
+  /* height: 77px; */
   position: fixed;
   top: 0;
   left: 0;
   z-index: 3000;
-  width: 101.5%;
-  background-image: linear-gradient(to left, #247dbe, #71bcf1);
-}
-
-.site-header {
-  background-image: linear-gradient(to left, #247dbe, #71bcf1);
   width: 100%;
-  padding: 0 0 0 0 !important;
+  background-image: linear-gradient(to left, #247dbe, #71bcf1);
 }
 
 .header-padding {
-  padding-top: 17px;
-  padding-bottom: 12px;
+  padding: 20px 25px;
 }
 
-.mx-2-5 {
-  margin: 0 0.8rem;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.header-right {
-  padding-right: 20px;
-  text-align: right;
-}
-
-.header-left {
-  padding-left: 25px;
-  text-align: left;
-}
-
-.header-button-base {
-  border-radius: 5px !important;
-  font-weight: 500;
-  border: none !important;
+/* Base for all header buttons */
+.header-btn {
+  border: none!important;
   outline: none !important;
+  height: 37px;
+  padding: 5 10;
+  margin: 0 0.8rem;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
 
-  height: 36px;
+/* Base for the middle navigation buttons */
+.header-nav-btn {
   padding-right: 10px;
   padding-left: 10px;
   z-index: 99 !important;
   color: #ffffff !important;
 }
 
+/* To control state for the middle nav buttons */
 .btn-nav {
   background: linear-gradient(135deg, #a9d3f1, #82beec);
   box-shadow: 5px 5px 15px #338ac9, -5px -5px 15px #9ed1fa;
@@ -91,14 +83,12 @@
   transition: all 0.3s;
 }
 
+/* For the logo button */
 .btn-logo {
   height: 36px;
   width: 150px;
-  border: none;
   background-image: url("../media/branding/logo.png");
   background-size: cover;
-  transition: all 0.4s;
-  margin-right: 40px;
 }
 
 .btn-logo:hover {
@@ -137,7 +127,7 @@
 .top-btn-img-home {
   height: 20px;
   width: auto;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .menu-drop-enter {
@@ -249,17 +239,12 @@
 }
 
 .map-icon {
-  height: 33px;
+  height: 100%;
   width: auto;
   filter: contrast(120%) saturate(140%);
 }
 
 .map-button {
-  height: auto !important;
-  padding-top: 5px;
-  padding-bottom: 4px;
-  margin-right: 40px;
-
   background: linear-gradient(135deg, #a9d3f1, #82beec);
   box-shadow: 5px 5px 15px #338ac9, -5px -5px 15px #9ed1fa;
   transition: all 0.3s;
