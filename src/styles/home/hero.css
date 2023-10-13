@@ -672,7 +672,7 @@
   }
 
   .hero-base-2 {
-    height: 280px;
+    height: 300px;
     position: relative;
     padding: 0 0;
   }
@@ -711,7 +711,7 @@
 
 @media (max-width: 387px) {
   .hero-base-2 {
-    height: 320px;
+    height: 350px;
   }
 }
 
@@ -721,6 +721,6 @@
   }
 
   .hero-base-2 {
-    height: 330px;
+    height: 350px;
   }
 }
