@@ -34,7 +34,7 @@ class CustomisedInt extends Component{
                         They're designed to fit your tastes &amp; crafted to perfection.
                     </div>
                     <a href="http://www.kitekitchens.com/">
-                        <button className="btn-kitchen">View More</button>
+                        <button className="btn-kitchen">Explore</button>
                     </a>
                 </div>
             </div>

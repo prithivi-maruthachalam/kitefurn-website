@@ -79,9 +79,9 @@ class Hero2 extends Component {
             </div>
             <div className="bed-text-subtop">Sleep on and store in</div>
 
-            <Link to="customInteriors/#residence">
+            {/* <Link to="customInteriors/#residence">
               <button className="btn btn-light btn-bed">Explore</button>
-            </Link>
+            </Link> */}
           </div>
 
           <CrossfadeLoop

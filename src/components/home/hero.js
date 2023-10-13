@@ -55,10 +55,10 @@ class Hero extends Component {
             <div className="hero-text">SAVING</div>
             <div className="hero-text">STORAGE</div>
 
-            <div className="mt-4-5">
+            {/* <div className="mt-4-5">
               <Link to="/work-in-progress">
                 <button className="btn btn-light btn-explore">
-                  Explore{" "}
+                  Explore interior options for your home{" "}
                   <img
                     className="btn-img"
                     src={arrow}
@@ -66,7 +66,7 @@ class Hero extends Component {
                   />
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="hero-base-2">
