@@ -2,7 +2,6 @@ import React, { Component, createRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import NavIds from "./customInteriors/navIds"
 
 import dropArrow from "../media/icons/icons8-triangle-arrow-96.png";
 import homeIcon from "../media/icons/home-icon.png";
@@ -228,22 +227,26 @@ class CollapsibleMenu extends Component {
     this.wrapperRef = createRef(null);
   }
 
-  // componentDidMount() {
-  //   window.addEventListener("click", (event) => {
-  //     if (
-  //       this.wrapperRef.current &&
-  //       !this.wrapperRef.current.contains(event.target)
-  //     ) {
-  //       this.setState({ inProp: false });
-  //     }
-  //   });
-  // }
+  componentDidMount() {
+    window.addEventListener("click", (event) => {
+      if (
+        (this.wrapperRef.current &&
+        !this.wrapperRef.current.contains(event.target))
+      ) {
+        this.setState({ inProp: false });
+      } 
+      
+      else if (event.target.nodeName == "BUTTON" && event.srcElement.className.includes("btn-sub-nav")) {
+        this.setState({ inProp: false })
+
+      }
+    });
+  }
 
   render() {
     return (
-      <span className="coll-nav">
+      <span className="coll-nav" ref={this.wrapperRef}>
         <button
-          ref={this.wrapperRef}
           className="header-button-base menu-button"
           onClick={() => {
             this.setState({ inProp: !this.state.inProp });
@@ -300,25 +303,25 @@ class CustomMenu extends Component {
     this.wrapperRef = createRef(null);
   }
 
-  // componentDidMount() {
-  //   window.addEventListener("click", this.handleClickOutside);
-  // }
+  componentDidMount() {
+    window.addEventListener("click", this.handleClickOutside);
+  }
 
-  // componentWillUnmount() {
-  //   window.removeEventListener("click", this.handleClickOutside);
-  // }
+  componentWillUnmount() {
+    window.removeEventListener("click", this.handleClickOutside);
+  }
 
-  // handleClickOutside = (event) => {
-  //   if (this.wrapperRef && !this.wrapperRef.current.contains(event.target)) {
-  //     this.setState({
-  //       inProp: false,
-  //       classNames:
-  //         this.props.location?.pathname === "/customInteriors"
-  //           ? this.props.className + " btn-nav-active"
-  //           : this.props.className + " btn-nav-inactive",
-  //     });
-  //   }
-  // };
+  handleClickOutside = (event) => {
+    if (this.wrapperRef && !this.wrapperRef.current.contains(event.target)) {
+      this.setState({
+        inProp: false,
+        classNames:
+          this.props.location?.pathname === "/customInteriors"
+            ? this.props.className + " btn-nav-active"
+            : this.props.className + " btn-nav-inactive",
+      });
+    }
+  };
 
   switchIn = () => {
     this.setState({
