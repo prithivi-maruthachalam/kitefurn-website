@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import CrossfadeLoop from "../utils/fadeLoop.js";
 
 import stairs from "../../media/images/home/stairs/stairs3.png";
@@ -46,9 +46,9 @@ class Hero2 extends Component {
               <div>DURABLE</div>
             </div>
 
-            <Link to="/customInteriors/#glassStairs">
+            <HashLink to="/customInteriors#glass-stairs">
               <button className="btn btn-light btn-stairs">View More</button>
-            </Link>
+            </HashLink>
           </div>
 
           <div className="stair-text-content">

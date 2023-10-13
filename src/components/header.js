@@ -1,6 +1,7 @@
 import React, { Component, createRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import dropArrow from "../media/icons/icons8-triangle-arrow-96.png";
 import homeIcon from "../media/icons/home-icon.png";
@@ -40,10 +41,11 @@ class Header extends Component {
         <div className="site-header">
           <div className="col-head-box header-padding">
             {/* Logo */}
-
             <Link to="/">
               <button className="btn btn-logo mx-2-5" />
             </Link>
+
+            {/* Main Navigation Buttons in the middle */}
             <div className="col-head header-left">
               <WrappedNav />
               <CollapsibleCustomMenu className="mx-2-5 header-button-base hover-flip">
@@ -129,7 +131,7 @@ class NavMenu extends Component {
     console.log(this.pathsList);
 
     let index;
-    if (window.location.href.indexOf("/customInteriors/#residence") !== -1) {
+    if (window.location.href.indexOf("/customInteriors#residence") !== -1) {
       index = 1;
     } else if (window.location.href.indexOf("/customInteriors") !== -1) {
       // do nothing
@@ -184,8 +186,8 @@ class NavMenu extends Component {
           </button>
         </Link>
 
-        <Link
-          to="/customInteriors/#residence"
+        <HashLink
+          to="/customInteriors#residence"
           className="resp-block"
           id="res-nav-btn-id"
         >
@@ -195,7 +197,7 @@ class NavMenu extends Component {
           >
             Residence Interiors
           </button>
-        </Link>
+        </HashLink>
 
         <a href="http://www.kitekitchens.com/" className="resp-block">
           <button
@@ -340,7 +342,7 @@ class CustomMenu extends Component {
         >
           <div className="menu-drop-internal text-center">
             <div className="menu-drop-buttons-container">
-              <Link to="/customInteriors/#hotels">
+              <HashLink to="/customInteriors#hotels">
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -349,9 +351,9 @@ class CustomMenu extends Component {
                 >
                   Hotel Interiors
                 </button>
-              </Link>
+              </HashLink>
 
-              <Link to="/customInteriors/#eateries">
+              <HashLink to="/customInteriors#eateries">
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -360,9 +362,9 @@ class CustomMenu extends Component {
                 >
                   Bakeries
                 </button>
-              </Link>
+              </HashLink>
 
-              <Link to="/customInteriors/#retails">
+              <HashLink to="/customInteriors#retails">
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -371,9 +373,9 @@ class CustomMenu extends Component {
                 >
                   Departmentals Stores
                 </button>
-              </Link>
+              </HashLink>
 
-              <Link to="/customInteriors/#halls">
+              <HashLink to="/customInteriors#halls">
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -382,9 +384,9 @@ class CustomMenu extends Component {
                 >
                   Banquet &#38; Meeting Halls
                 </button>
-              </Link>
+              </HashLink>
 
-              <Link to="/customInteriors/#offices">
+              <HashLink to="/customInteriors#offices">
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -393,7 +395,7 @@ class CustomMenu extends Component {
                 >
                   Offices
                 </button>
-              </Link>
+              </HashLink>
 
               <Link to="/customInteriors">
                 <button
