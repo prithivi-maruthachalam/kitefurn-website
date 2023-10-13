@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { HashLink } from 'react-router-hash-link';
 import imgA from '../../media/images/customInteriors/glassStairs/A.jpg';
 import imgB from '../../media/images/customInteriors/glassStairs/B.png';
 
@@ -75,11 +75,11 @@ class GlassStairs extends Component{
 
                         <div className="glassStairs-residenceBtnContainer gsA">
                             <div className="residenceExtraText">Take a look at more of our designs for <span>Residences</span></div>
-                            <a href="/customInteriors/#residence">
+                            <HashLink to="/customInteriors#residence">
                                 <button className="glassStairs-btn-toResidence">
                                     Residence Interiors
                                 </button>
-                            </a>
+                            </HashLink>
                         </div>
 
                     </div>
