@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {HashLink} from 'react-router-hash-link'
+import { Link } from "react-router-dom";
 
 import bedroomA from "../../media/images/home/custom/bedroomA.jpg";
 import bedroomB from "../../media/images/home/custom/bedroomB.jpg";
@@ -46,27 +46,27 @@ class CustomisedInt extends Component {
           </div>
 
           <div className="custom-subtag">
-            <HashLink to="/customInteriors#residence">
+            <Link to="/customInteriors">
               <button className="btn-custom-types">Living spaces</button>
-            </HashLink>
-            <HashLink to="/customInteriors#hotels">
+            </Link>
+            <Link to="/customInteriors">
               <button className="btn-custom-types">Hotels</button>
-            </HashLink>
-            <HashLink to="/customInteriors#residence">
+            </Link>
+            <Link to="/customInteriors">
               <button className="btn-custom-types">Bedrooms</button>
-            </HashLink>
-            <a href="http://www.kitekitchens.com/">
+            </Link>
+            <Link to="/customInteriors">
               <button className="btn-custom-types">Kitchens</button>
-            </a>
-            <HashLink to="/customInteriors#residence">
+            </Link>
+            <Link to="/customInteriors">
               <button className="btn-custom-types">Dining spaces</button>
-            </HashLink>
-            <HashLink to="/customInteriors#retails">
+            </Link>
+            <Link to="/customInteriors">
               <button className="btn-custom-types">Retail spaces</button>
-            </HashLink>
-            <HashLink to="/customInteriors#eateries">
+            </Link>
+            <Link to="/customInteriors">
               <button className="btn-custom-types">Eateries</button>
-            </HashLink>
+            </Link>
           </div>
 
           <div className="custom-text">
@@ -74,9 +74,9 @@ class CustomisedInt extends Component {
             your requirements into incredibly aesthetic and functional designs.
           </div>
 
-          <HashLink to="/customInteriors">
+          <Link to="/customInteriors">
             <button className="btn btn-light btn-custom-main">View More</button>
-          </HashLink>
+          </Link>
         </div>
 
         <div className="custom-grid">
