@@ -236,10 +236,11 @@ class CollapsibleMenu extends Component {
         this.setState({ inProp: false });
       } 
       
-      else if (event.target.nodeName == "BUTTON" && event.srcElement.className.includes("btn-sub-nav")) {
+      else if (event.srcElement.className.includes("top-btn-img-home") || event.srcElement.className.includes("btn-sub-nav") || (event.srcElement.className.includes("btn-nav") && !event.srcElement.className.includes("hover-flip"))) {
         this.setState({ inProp: false })
-
       }
+
+      // console.log(event.srcElement.className)
     });
   }
 
