@@ -189,7 +189,7 @@ class NavMenu extends Component {
         </Link>
 
         <HashLink
-          to={navIds.residences}
+          to="/customInteriors#residence"
           className="resp-block"
           id="res-nav-btn-id"
         >

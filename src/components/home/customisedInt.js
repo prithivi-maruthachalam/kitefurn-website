@@ -48,19 +48,19 @@ class CustomisedInt extends Component {
           </div>
 
           <div className="custom-subtag">
-            <HashLink to={navId.residences}>
+            <HashLink to="/customInteriors#residence">
               <button className="btn-custom-types">Living spaces</button>
             </HashLink>
             <HashLink to={navId.hotels}>
               <button className="btn-custom-types">Hotels</button>
             </HashLink>
-            <HashLink to={navId.residences}>
+            <HashLink to="/customInteriors#residence">
               <button className="btn-custom-types">Bedrooms</button>
             </HashLink>
             <a href="http://www.kitekitchens.com/">
               <button className="btn-custom-types">Kitchens</button>
             </a>
-            <HashLink to={navId.residences}>
+            <HashLink to="/customInteriors#residence">
               <button className="btn-custom-types">Dining spaces</button>
             </HashLink>
             <HashLink to={navId.retails}>
