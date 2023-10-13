@@ -2,6 +2,7 @@
   padding: 40px 30px;
   height: fit-content;
   background-color: rgb(243, 229, 229);
+  position: relative;
 }
 
 .halls-grid-container {

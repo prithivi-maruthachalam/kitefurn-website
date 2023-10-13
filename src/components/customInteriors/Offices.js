@@ -22,10 +22,13 @@ const content = {
     }
 }
 
+const navItemId = "offices-nav";
+
 class Offices extends Component{
     render(){
         return(
             <div className="fluid-container offices-base" id="offices">
+        <div className="navsection" id={navItemId}></div>
                 <div className="offices-grid-container">
                     <div className="title gridItem">
                         <div className="offices-title">
@@ -58,4 +61,4 @@ class Offices extends Component{
         );
     }
 }
-export default Offices;
+export {Offices, navItemId};

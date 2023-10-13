@@ -34,10 +34,13 @@ const content = {
     },
 }
 
-class GlassStairs extends Component{
+const navItemId = "eateries-nav";
+
+class Eateries extends Component{
     render(){
         return(
             <div className="fluid-container eateries-base" id="eateries">
+        <div className="navsection" id={navItemId}></div>
                 <div className="eat-grid-container">
                     <div id="e1">
                         <img src={A} alt={content.imgA.alt} />
@@ -85,4 +88,4 @@ class GlassStairs extends Component{
         );
     }
 }
-export default GlassStairs;
+export {Eateries, navItemId};

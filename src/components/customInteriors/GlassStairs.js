@@ -26,10 +26,13 @@ const content = {
         '\nThese rails can also be fitted to existing staircases.'
 }
 
-class GlassStairs extends Component{
+const navItemId = "stairs-nav";
+
+class Stairs extends Component{
     render(){
         return(
             <div className="fluid-container glassStairs-base" id="glass-stairs">
+        <div className="navsection" id={navItemId}></div>
                 <div className="glassStairsA">
                     <div>
                         <img className="glassStairs-img" src={imgA} alt={content.imgA.alt} />
@@ -88,4 +91,4 @@ class GlassStairs extends Component{
         );
     }
 }
-export default GlassStairs;
+export {Stairs, navItemId};

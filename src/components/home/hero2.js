@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import CrossfadeLoop from "../utils/fadeLoop.js";
 import { HashLink } from "react-router-hash-link";
+import navIds from "../customInteriors/navIds.js";
 
 import stairs from "../../media/images/home/stairs/stairs3.png";
 import stairs2 from "../../media/images/home/stairs/stairs4.png";
@@ -47,7 +48,7 @@ class Hero2 extends Component {
               <div>DURABLE</div>
             </div>
 
-            <HashLink to="/customInteriors#glass-stairs">
+            <HashLink to={navIds.stairs}>
               <button className="btn btn-light btn-stairs">View More</button>
             </HashLink>
           </div>

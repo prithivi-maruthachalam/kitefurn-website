@@ -35,10 +35,13 @@ const content = {
 
 }
 
-class Hotels extends Component{
+const navItemId = "halls-nav";
+
+class Halls extends Component{
     render(){
         return(
             <div className="fluid-container halls-base" id="halls">
+        <div className="navsection" id={navItemId}></div>
                 <div className="halls-grid-container">
                     <div id="ha" className="halls-title-container">
                         <div className="halls-title">Mantaps, Halls and Banquets</div>
@@ -84,4 +87,4 @@ class Hotels extends Component{
         );
     }
 }
-export default Hotels;
+export {Halls, navItemId};

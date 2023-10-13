@@ -2,6 +2,7 @@
   padding: 40px 35px;
   height: fit-content;
   background-color: rgb(211, 211, 212);
+  position: relative;
 }
 
 .offices-grid-container {

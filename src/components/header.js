@@ -2,6 +2,7 @@ import React, { Component, createRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import NavIds from "./customInteriors/navIds"
 
 import dropArrow from "../media/icons/icons8-triangle-arrow-96.png";
 import homeIcon from "../media/icons/home-icon.png";
@@ -12,6 +13,7 @@ import PhoneButton from "./utils/phoneNumber";
 
 import "../styles/animations.css";
 import "../styles/header.css";
+import navIds from "./customInteriors/navIds";
 
 const content = {
   home: {
@@ -131,7 +133,7 @@ class NavMenu extends Component {
     console.log(this.pathsList);
 
     let index;
-    if (window.location.href.indexOf("/customInteriors#residence") !== -1) {
+    if (window.location.href.indexOf(navIds.residences) !== -1) {
       index = 1;
     } else if (window.location.href.indexOf("/customInteriors") !== -1) {
       // do nothing
@@ -153,7 +155,7 @@ class NavMenu extends Component {
     console.log(this.pathsList);
 
     let index;
-    if (window.location.href.indexOf("/customInteriors/#residence") !== -1) {
+    if (window.location.href.indexOf(navIds.residences) !== -1) {
       index = 1;
     } else if (window.location.href.indexOf("/customInteriors") !== -1) {
       // do nothing
@@ -187,7 +189,7 @@ class NavMenu extends Component {
         </Link>
 
         <HashLink
-          to="/customInteriors#residence"
+          to={navIds.residences}
           className="resp-block"
           id="res-nav-btn-id"
         >
@@ -342,7 +344,7 @@ class CustomMenu extends Component {
         >
           <div className="menu-drop-internal text-center">
             <div className="menu-drop-buttons-container">
-              <HashLink to="/customInteriors#hotels">
+              <HashLink to={navIds.hotels}>
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -353,7 +355,7 @@ class CustomMenu extends Component {
                 </button>
               </HashLink>
 
-              <HashLink to="/customInteriors#eateries">
+              <HashLink to={navIds.eateries}>
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -364,7 +366,7 @@ class CustomMenu extends Component {
                 </button>
               </HashLink>
 
-              <HashLink to="/customInteriors#retails">
+              <HashLink to={navIds.retails}>
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -375,7 +377,7 @@ class CustomMenu extends Component {
                 </button>
               </HashLink>
 
-              <HashLink to="/customInteriors#halls">
+              <HashLink to={navIds.halls}>
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {
@@ -386,7 +388,7 @@ class CustomMenu extends Component {
                 </button>
               </HashLink>
 
-              <HashLink to="/customInteriors#offices">
+              <HashLink to={navIds.offices}>
                 <button
                   className="btn btn-light btn-sub-nav"
                   onClick={() => {

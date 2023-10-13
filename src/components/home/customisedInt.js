@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import navId from "../customInteriors/navIds";
 
 import bedroomA from "../../media/images/home/custom/bedroomA.jpg";
 import bedroomB from "../../media/images/home/custom/bedroomB.jpg";
@@ -47,25 +48,25 @@ class CustomisedInt extends Component {
           </div>
 
           <div className="custom-subtag">
-            <HashLink to="/customInteriors#residence">
+            <HashLink to={navId.residences}>
               <button className="btn-custom-types">Living spaces</button>
             </HashLink>
-            <HashLink to="/customInteriors#hotels">
+            <HashLink to={navId.hotels}>
               <button className="btn-custom-types">Hotels</button>
             </HashLink>
-            <HashLink to="/customInteriors#residence">
+            <HashLink to={navId.residences}>
               <button className="btn-custom-types">Bedrooms</button>
             </HashLink>
             <a href="http://www.kitekitchens.com/">
               <button className="btn-custom-types">Kitchens</button>
             </a>
-            <HashLink to="/customInteriors#residence">
+            <HashLink to={navId.residences}>
               <button className="btn-custom-types">Dining spaces</button>
             </HashLink>
-            <HashLink to="/customInteriors#retails">
+            <HashLink to={navId.retails}>
               <button className="btn-custom-types">Retail spaces</button>
             </HashLink>
-            <HashLink to="/customInteriors#eateries">
+            <HashLink to={navId.eateries}>
               <button className="btn-custom-types">Eateries</button>
             </HashLink>
           </div>

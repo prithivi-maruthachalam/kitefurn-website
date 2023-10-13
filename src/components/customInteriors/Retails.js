@@ -28,10 +28,13 @@ const content = {
     }
 }
 
+const navItemId = "retails-nav";
+
 class Retails extends Component{
     render(){
         return(
             <div className="fluid-container retails-base" id="retails">
+                <div className="navsection" id={navItemId}></div>
                 <div className="retailsA">
                     <div>
                         <img src={imgA} alt={content.imgA.alt} />
@@ -75,4 +78,4 @@ class Retails extends Component{
         );
     }
 }
-export default Retails;
+export {Retails, navItemId};
