@@ -66,16 +66,14 @@
 }
 
 .btn-nav-target {
-  background: linear-gradient(-135deg, #84c2ee, #57a2db);
-  box-shadow: inset 2px 2px 10px #338ac9, inset -2px -2px 10px #9ed1fa;
-
+  background: linear-gradient(135deg, #a9d3f1, #82beec);
+  box-shadow: 5px 5px 15px #338ac9, -5px -5px 15px #9ed1fa;
   transition: all 0.3s;
 }
 
 .btn-nav-active {
-  background: linear-gradient(-135deg, #8dcfff, #62b7f8);
-  box-shadow: inset 2px 2px 10px #338ac9, inset -2px -2px 10px #9ed1fa;
-
+  background: linear-gradient(135deg, #a9d3f1, #82beec);
+  box-shadow: 5px 5px 15px #338ac9, -5px -5px 15px #9ed1fa;
   transition: all 0.3s;
 }
 
@@ -543,6 +541,7 @@
     display: inline-block;
     position: absolute;
     top: 70px;
+    z-index: 999;
   }
 
   .nav-container {
